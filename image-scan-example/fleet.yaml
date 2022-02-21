@@ -1,4 +1,5 @@
 namespace: default
+clusterSelector: {}
 imageScans:
 - policy: 
     semver: 
