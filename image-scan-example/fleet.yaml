@@ -1,0 +1,10 @@
+namespace: default
+imageScans:
+- policy: 
+    semver: 
+      range: "v0.1.*" 
+    alphabetical:
+      order: asc 
+  image: "gmehta3/fleet-image-test-curl"
+  tagName: test-curl
+  interval: 5m 

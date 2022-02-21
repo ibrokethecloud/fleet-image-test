@@ -1,0 +1,16 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: fleet-image-scan
+  namespace: fleet-local
+spec:
+  repo: https://github.com/ibrokethecloud/fleet-image-test
+  paths: 
+  - image-scan-example
+  imageScanInterval: 1m 
+  clientSecretName: secret 
+  # specify the commit pattern
+  imageScanCommit:
+    authorName: ibrokethecloud
+    authorEmail: gaurav.mehta@suse.com
+    messageTemplate: "update image"
