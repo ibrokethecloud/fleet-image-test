@@ -4,13 +4,12 @@ metadata:
   name: fleet-image-scan
   namespace: fleet-local
 spec:
-  repo: https://github.com/ibrokethecloud/fleet-image-test
+  repo: ssh://git@github.com/ibrokethecloud/fleet-image-test.git
   branch: main
   paths: 
   - image-scan-example
   imageScanInterval: 1m 
   clientSecretName: secret 
-  # specify the commit pattern
   imageScanCommit:
     authorName: ibrokethecloud
     authorEmail: gaurav.mehta@suse.com
