@@ -5,6 +5,7 @@ metadata:
   namespace: fleet-local
 spec:
   repo: https://github.com/ibrokethecloud/fleet-image-test
+  branch: main
   paths: 
   - image-scan-example
   imageScanInterval: 1m 
